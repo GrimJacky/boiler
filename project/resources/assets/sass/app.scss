@@ -1,0 +1,61 @@
+@import "./styles/bootstrap.css";
+@import "./styles/icons.css";
+@import "./styles/style.css";
+@import "./styles/custom.css";
+@import "./styles/index.css";
+div#boiler_calculator_app {
+  /*width: 1015px;*/
+  /* height: 389px; */
+}
+.steps {
+  float:right;
+}
+.col-step-type.active:hover {
+  opacity: 0.75;
+  cursor: pointer;
+}
+.col-step-type.active {
+  opacity: 1;
+}
+.col-step-type {
+  padding: 15px;
+  width: auto;
+  opacity: 0.5;
+  transition: .5s;
+}
+.step-type {
+  width: 50px;
+  height: 50px;
+  border: #fff 1px solid;
+  border-radius: 100%;
+}
+#home, #bedrooms, #bathrooms, #cylinder {
+
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+  -ms-transition: opacity 0.4s ease-in;
+  -moz-transition: opacity 0.4s ease-in;
+  -webkit-transition: opacity 0.4s ease-in;
+}
+#home.active, #bedrooms.active, #bathrooms.active, #cylinder.active {
+
+  opacity: 1;
+  transition: opacity 0.4s ease-out;
+  -ms-transition: opacity 0.4s ease-out;
+  -moz-transition: opacity 0.4s ease-out;
+  -webkit-transition: opacity 0.4s ease-out;
+}
+li {
+  list-style-type: square;
+}
+@media screen and (max-width: 768px){
+  .steps {
+    float: none;
+    display: inline-block;
+    margin: 0 auto;
+  }
+
+  .steps > div {
+    display: inline-block;
+  }
+}

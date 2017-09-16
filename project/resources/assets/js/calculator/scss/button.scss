@@ -1,0 +1,63 @@
+$color: #195ca2;
+$inverse-color: #fff;
+
+$hover-color: #0e3da2;
+
+.btn {
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background: none;
+  cursor: pointer;
+  padding: 10px 25px;
+  display: inline-block;
+  margin: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  &.type1 {
+    border: 3px solid $color;
+    color: $color;
+    &:hover, &:active {
+      color: $inverse-color;
+      background: $color;
+    }
+  }
+  &.type2 {
+    margin: 0;
+    padding: 5px 7px;
+    border-radius: 50px;
+    border: 3px solid $color;
+    color: $color;
+    overflow: hidden;
+    opacity: .3;
+    &.activate {
+      opacity: 1;
+      &:hover, &:active {
+        border-color: $hover-color;
+        color: $hover-color;
+        opacity: .5;
+        cursor: pointer;
+      }
+    }
+    &:hover, &:active {
+      cursor: default;
+    }
+  }
+  &.type3 {
+    margin: 0;
+    padding: 5px 10px;
+    border: 3px solid $color;
+    color: $color;
+    &:hover, &:active {
+      color: $inverse-color;
+      background: $color;
+    }
+  }
+}

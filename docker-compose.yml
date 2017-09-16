@@ -1,0 +1,21 @@
+fpm:
+  image: mshpakov/phpserver:latest
+  ports:
+    - "80:80"
+    - "443:443"
+  links:
+    - mysql:mysql
+  volumes:
+    - ./project:/var/www
+    - ./conf:/etc/nginx/sites-enabled
+    - ./logs/nginx:/var/log/nginx
+
+mysql:
+  image: mysql
+  volumes:
+    - ./db:/var/lib/mysql
+  ports:
+    - "3306:3306"
+  environment:
+    MYSQL_ROOT_PASSWORD: root
+    MYSQL_DATABASE: boilers

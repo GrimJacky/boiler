@@ -1,0 +1,98 @@
+.box-row {
+  position: relative;
+  box-sizing: border-box;
+  min-height: 2.25rem;
+  margin-bottom: 0;
+  background: #ffffff;
+  overflow: hidden;
+  text-align: center;
+  color: #294b69;
+  border-radius: 2px;
+  border: 1px solid #6f9dc7;
+  padding: .5rem;
+}
+hr {
+ border: none;
+ border-top: 0.5px dashed #6f9dc7;
+}
+
+ul {
+ list-style: square;
+ text-align: left;
+ margin: 0;
+}
+
+.calculator {
+  position: relative;
+  box-sizing: border-box;
+  min-height: 2.25rem;
+  margin: 2rem 0;
+  background: #fff;
+  overflow: hidden;
+  text-align: center;
+  color: #294b69;
+  border-radius: 2px;
+  border: 1px solid #6f9dc7;
+  padding: 1.5rem;
+  h4{
+    margin: 0;
+  }
+  .form-group {
+    display: block;
+    width: 50%;
+    float: left;
+    label {
+      display: block;
+    }
+    .form-control {
+      width: 8rem;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 3px solid #195ca2;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+      outline: none;
+      background: transparent;
+    }
+  }
+}
+
+.contact {
+  position: relative;
+  box-sizing: border-box;
+  min-height: 2.25rem;
+  background: #fff;
+  overflow: hidden;
+  text-align: center;
+  color: #294b69;
+  border-radius: 2px;
+  border: 1px solid #6f9dc7;
+  padding: 1.5rem;
+  h4{
+    margin: 0;
+  }
+  .form-group {
+    display: block;
+    width: 100%;
+    float: left;
+    label {
+      display: block;
+    }
+    .form-control {
+      width: 100%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 3px solid #195ca2;
+      -webkit-transition: 0.5s;
+      transition: 0.5s;
+      outline: none;
+      background: transparent;
+      resize: none;
+    }
+    .error {
+      border-color: #a21735;
+    }
+  }
+}

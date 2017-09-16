@@ -1,0 +1,1 @@
+$('#header button>.icon-check').parent().text('Save');

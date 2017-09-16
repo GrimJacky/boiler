@@ -1,0 +1,16 @@
+/bootstrap
+/vendor
+composer.phar
+.DS_Store
+.env
+.env.*.php
+.env.php
+composer.lock
+/node_modules
+/html
+/storage
+package-json.lock
+phpunit.xml
+/db
+/logs
+

@@ -1,0 +1,15 @@
+#header button>i:before, #header a>i:before{
+    font-family: "Open Sans";
+    font-size: 15px;
+}
+#header button>i.icon-check:before {
+    content: "SAVE";
+}
+
+#header button>i.icon-trash:before {
+    content: "DELETE";
+}
+
+#header a>i.icon-plus:before {
+    content: "CREATE";
+}
